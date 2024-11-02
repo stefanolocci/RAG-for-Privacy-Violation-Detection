@@ -7,7 +7,7 @@ from bs4 import BeautifulSoup
 DOWNLOAD_DIR = "downloaded_papers"
 os.makedirs(DOWNLOAD_DIR, exist_ok=True)
 
-# Semantic Scholar API URL and query terms
+# Semantic Scholar API URL and query terms DATE OF RETRIEVAL: 15 October 2024
 API_URL = "https://api.semanticscholar.org/graph/v1/paper/search"
 QUERY_TERMS = 'privacy | "sensitive data nlp" | "privacy llm" | "sensitive data"'
 QUERY_TERMS = 'privacy | "privacy-preserving" | "sensitive data" | "sensitive information" | "confidential data" | "confidential information" | "personal data" | "personally-identifiable information" | PII'
