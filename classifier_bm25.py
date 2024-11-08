@@ -180,8 +180,8 @@ def main(experiment):
         api_key="MyOpenAIKey")  # Replace with your actual API key
 
     # Analyze dataset (iterating over 'text' column in CSV)
-    dataset = "enron_mail_3k_annotated_gpt35_full_50.tsv"  # Path to your CSV file
-    output_file = "new_res/abs/enron_mail_3k_annotated_gpt4o_full_BM25.tsv"
+    dataset = "dataset_name.tsv"  # Path to your CSV file
+    output_file = "output_file_name.tsv"
     analyze_dataset_and_save(dataset, retriever, openai_client, output_file=output_file)
 
 
