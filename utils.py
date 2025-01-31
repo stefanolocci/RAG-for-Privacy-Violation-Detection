@@ -28,12 +28,6 @@ def merge_files(tsv_file, csv_file, output_file):
     print(f"Merged file saved to {output_file}")
 
 
-# # Example usage
-# tsv_file = "datasets/enron_mail_3k_texts_cleaned_50_2000.tsv"  # Replace with the path to your TSV file
-# csv_file = "enron_mail_3k_annotated_gpt35.csv"  # Replace with the path to your CSV file
-# output_file = "enron_mail_3k_annotated_gpt35_full.tsv"  # Output file path
-
-
 def clean_text(text):
     """
     Clean the input text by removing unwanted characters and fixing spacing issues.
