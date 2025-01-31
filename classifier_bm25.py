@@ -79,22 +79,6 @@ def semantic_search(query, retriever):
     return [node.text for node in retrieved_nodes]
 
 
-def create_zero_shot_openai_prompt_new(input_text, relevant_docs):
-    """
-    Create the OpenAI API prompt using relevant documents and input text.
-    """
-    return f"""Your task is to analyze a text to determine whether it exposes private or sen-
-            sitive information, and provide an explanation of your answer. The text to be
-            analyzed is the following:
-            {input_text}
-            Format your answer by providing both a label and a clear and thorough expla-
-            nation, as follows:
-            Label: it should be “violation detected” or “no violation detected”. 
-            Explanation: it should be a complete and well-reasoned analysis, referencing the
-            provided documents to justify why the text shows violations or not.
-    """
-
-
 def create_openai_prompt_new(input_text, relevant_docs):
     """
     Create the OpenAI API prompt using relevant documents and input text.
